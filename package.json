@@ -1,0 +1,18 @@
+{
+  "name": "sloth-img",
+  "version": "1.0.0",
+  "description": "progressively lazy load images",
+  "main": "./public/progressive-image.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Fong",
+  "license": "MIT",
+  "dependencies": {
+    "lit-element": "^2.2.1",
+    "stackblur-canvas": "^2.2.0"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.4.1"
+  }
+}
