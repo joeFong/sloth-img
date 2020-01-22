@@ -1,6 +1,6 @@
 {
   "name": "sloth-img",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "progressively lazy load images",
   "main": "./public/progressive-image.html",
   "scripts": {

@@ -14,7 +14,7 @@ Include script in head or body
 ### CDN
 Include script in head or body
 ```sh
-<script src="https://cdn.jsdelivr.net/npm/sloth-img@1.0.1/public/slog-img.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sloth-img@1.0.3/public/slog-img.js"></script>
 ```
 ### Installation
 Install the dependencies and devDependencies and start the server.
