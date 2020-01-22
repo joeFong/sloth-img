@@ -1,38 +1,38 @@
-# resume-jf
+# sloth-im
 
-A litElement webcomponent to easily create a new beautiful resume and embed it on your website or print it as a pdf.
+A litElement webcomponent that progressively lazy loads images.
 
 ### Basic Usage
-Go to my website https://joefong.xyz to see what the 'resumeObj' object looks like.
 ```sh
-<resume-jf id="resume" theme="classic" resume="[resumeObj]"></resume-jf>
+<progressive-image alt="one" datasrc="./images/large.jpg" datathumbnail="./images/small.jpg"/></progressive-image>
 ```
 ### Static
 Include script in head or body
 ```sh
-<script src="/path/to/file/resume-jf/dist/resume-jf.js"></script>
+<script src="/path/to/file/sloth-img/public/sloth-img.js"></script>
 ```
 ### CDN
 Include script in head or body
 ```sh
-<script src="https://cdn.jsdelivr.net/npm/resume-jf@1.0.2/dist/resume-jf.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sloth-img@1.0.0/public/progressive-image.js"></script>
 ```
 ### Installation
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-$ npm i resume-jf
+$ npm i sloth-img
 ```
 
 ### Attributes
-- `theme` - only has 'classic' theme for now.
-- `resume` - a JSON object passed in as a string. 
+- `alt` - the same as an alt tag in <img>.
+- `datasrc` - The large image you want to load
+- `datathumbnail` - The smaller image you want to show before the large image. 
 
 ### Development
 Want to contribute? Great!
 
-resume-jf uses Webpack for fast developing.
-To build changes for production, run:
+sloth-img uses Webpack for fast developing.
+To build changes for production, run from root directory:
 ```sh
 $ npx webpack
 ```
@@ -49,11 +49,8 @@ $ polymer serve
 ### Todos
 
  - Write Tests
- - Add Themes
- - A form to generate resume for users that don't want to deal with JSON 
-
 License
 ----
 
-ISC
+MIT
 **Free Software, Hell Yeah!**

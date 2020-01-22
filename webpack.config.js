@@ -2,13 +2,13 @@ const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  entry: './src/progressive-image.js',
+  entry: './src/sloth-img.js',
   mode: 'production',
   optimization: {
     minimizer: [new UglifyJsPlugin()],
   },
   output: {
-    filename: 'progressive-image.js',
+    filename: 'sloth-img.js',
     path: path.resolve(__dirname, 'public')
   }
 };

@@ -4,7 +4,7 @@ import { GlobalStyles } from './styles/styles';
 import * as StackBlur from 'stackblur-canvas';
 
 // Extend the LitElement base class
-class ProgressiveImage extends LitElement {
+class SlothImg extends LitElement {
   static get styles() {
     return [
       GlobalStyles,
@@ -18,7 +18,7 @@ class ProgressiveImage extends LitElement {
       dataThumbnail: {
         type: String
       },
-      name: {
+      alt: {
         type: String
       },
       _memoization: {
@@ -115,14 +115,14 @@ class ProgressiveImage extends LitElement {
   }
 
   render(){
-    const { dataSrc, dataThumbnail, name } = this;
+    const { dataSrc, dataThumbnail, alt } = this;
     return html`
     <section class="wrapper">
       <div class="aspect-ratio-fill">
         <div class="progressiveMedia">
           <canvas class="progressiveMedia__canvas" width="75" height="38.671875"></canvas>
-          <img class="progressiveMedia__image" data-src="${dataSrc}" alt="${name}"/>
-          <img class="progressiveMedia__thumbnail" src="${dataThumbnail}" alt="${name}"/>
+          <img class="progressiveMedia__image" data-src="${dataSrc}" alt="${alt}"/>
+          <img class="progressiveMedia__thumbnail" src="${dataThumbnail}" alt="${alt}"/>
         </div>
       </div>
     </section>
@@ -130,4 +130,4 @@ class ProgressiveImage extends LitElement {
   }
 }
 // Register the new element with the browser.
-customElements.define('progressive-image', ProgressiveImage);
+customElements.define('sloth-img', SlothImg);
