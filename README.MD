@@ -4,7 +4,7 @@ A litElement webcomponent that progressively lazy loads images.
 
 ### Basic Usage
 ```sh
-<progressive-image alt="one" datasrc="./images/large.jpg" datathumbnail="./images/small.jpg"/></progressive-image>
+<slog-img alt="one" datasrc="./images/large.jpg" datathumbnail="./images/small.jpg"/></slog-img>
 ```
 ### Static
 Include script in head or body
@@ -14,7 +14,7 @@ Include script in head or body
 ### CDN
 Include script in head or body
 ```sh
-<script src="https://cdn.jsdelivr.net/npm/sloth-img@1.0.1/public/progressive-image.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sloth-img@1.0.1/public/slog-img.js"></script>
 ```
 ### Installation
 Install the dependencies and devDependencies and start the server.
