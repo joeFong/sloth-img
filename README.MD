@@ -1,4 +1,4 @@
-# sloth-im
+# sloth-img
 
 A litElement webcomponent that progressively lazy loads images.
 
